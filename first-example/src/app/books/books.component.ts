@@ -20,6 +20,7 @@ export class BooksComponent implements OnInit {
   src2 :string = 'https://images-na.ssl-images-amazon.com/images/I/41QPBtd5VIS._SX460_BO1,204,203,200_.jpg';
 
 
+  isDisabled : boolean = false;
   constructor() { }
 
   ngOnInit(): void {
