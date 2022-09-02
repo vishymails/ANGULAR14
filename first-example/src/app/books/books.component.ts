@@ -17,15 +17,23 @@ interface Book {
 })
 export class BooksComponent implements OnInit {
 
+  companyName = "john deere pune India";
+
+  todaysdate = new Date();
+
+  datajson = {firstname : 'Ram', lastname : 'kumar', age : 25, address : {addr1 : 'bangalore', workaddr : 'pune'}};
+
+  companies = ["ISRO", "Oracle", "Microsoft", "CitiBank", "ST Electronics", "IBM", "Cyient"];
+
   books : Book[] = [
     {
-      name : "Sherlock Holmes Series Complete ",
+      name : "sherlock holmes series complete ",
       author : " Conan Doyle",
       src : 'https://images-na.ssl-images-amazon.com/images/I/51rvC3FJqkL._SX451_BO1,204,203,200_.jpg'
 
     },
     {
-      name : "Siddhartha",
+      name : "siddhartha",
       author : " Hermann Hesse",
       src : 'https://images-na.ssl-images-amazon.com/images/I/41QPBtd5VIS._SX460_BO1,204,203,200_.jpg'
 

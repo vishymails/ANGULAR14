@@ -36,9 +36,53 @@ Data Entered in to the text field : {{ data }}
         {{ i + 1}}
         <img [src]="book.src"
         [alt] = "book.name" width="100" />
-        {{ book.name }} by {{ book.author }}
+        {{ book.name | titlecase }} by {{ book.author | titlecase}}
     </li>
     </ng-container>
     
 </ul>
+
+<h3> Pipe Demos </h3>
+
+<div>{{companyName | uppercase }}</div>
+<div>{{companyName | lowercase }}</div>
+<div>{{todaysdate | date:'d/M/y'}}</div>
+
+<div>Currency Pipe 
+    {{ 678292.8989 | currency:"INR" }}<br/>
+    {{ 678292.8989 | currency:"SGD" }}<br/>
+    {{ 678292.8989 | currency:"GBP" }}
+</div>
+<br/>
+<br/>
+<div>Time 
+{{ todaysdate | date:'shortTime'}}
+
+</div>
+
+<div>
+    decimal pipe 
+
+    {{ 9898.9898989899898 | number: '4:4-5' }}
+</div>
+
+
+<div>
+    JSON Pipe 
+
+    {{ datajson | json }}
+</div>
+
+<div>
+    Slice Pipe 
+
+    {{ companies | slice:2:4 }}
+</div>
+
+<div>
+    percentage pipe 
+
+    {{ 56.890000 | percent }}
+</div>
+
 
