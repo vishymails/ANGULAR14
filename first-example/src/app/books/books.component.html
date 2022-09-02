@@ -37,6 +37,8 @@ Data Entered in to the text field : {{ data }}
         <img [src]="book.src"
         [alt] = "book.name" width="100" />
         {{ book.name | titlecase }} by {{ book.author | titlecase}}
+
+        <h4>{{ book.price | currency:"INR" }}</h4>
     </li>
     </ng-container>
     
@@ -63,7 +65,7 @@ Data Entered in to the text field : {{ data }}
 <div>
     decimal pipe 
 
-    {{ 9898.9898989899898 | number: '4:4-5' }}
+    {{ 9898.9898989899898 | number: '8.4-4' }}
 </div>
 
 
