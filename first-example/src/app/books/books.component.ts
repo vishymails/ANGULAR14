@@ -1,5 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
+
+interface Book {
+  name : string;
+  author : string;
+  src : string;
+
+}
+
+
+
 @Component({
   selector: 'app-books',
   templateUrl: './books.component.html',
@@ -7,33 +17,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksComponent implements OnInit {
 
-  name : string = "Sherlock Holmes Series Complete ";
+  books : Book[] = [
+    {
+      name : "Sherlock Holmes Series Complete ",
+      author : " Conan Doyle",
+      src : 'https://images-na.ssl-images-amazon.com/images/I/51rvC3FJqkL._SX451_BO1,204,203,200_.jpg'
 
-  author : string = " Conan Doyle";
+    },
+    {
+      name : "Siddhartha",
+      author : " Hermann Hesse",
+      src : 'https://images-na.ssl-images-amazon.com/images/I/41QPBtd5VIS._SX460_BO1,204,203,200_.jpg'
 
-  src :string = 'https://images-na.ssl-images-amazon.com/images/I/51rvC3FJqkL._SX451_BO1,204,203,200_.jpg';
+    }
+  ]
 
-  name2 : string = "Siddhartha  ";
+  
+  
 
-  author2 : string = " Hermann Hesse";
-
-  src2 :string = 'https://images-na.ssl-images-amazon.com/images/I/41QPBtd5VIS._SX460_BO1,204,203,200_.jpg';
-
-
-  isDisabled : boolean = false;
-
-  handleClick() {
-    alert("Button clicked");
-  }
-
-  handleMouseOver() {
-    this.isDisabled = true;
-  }
 
 
   data : string ="Dr.Rao";
 
  
+  isShowing : boolean = true;
+
 
   constructor() { }
 
