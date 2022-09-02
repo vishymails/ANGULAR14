@@ -12,6 +12,8 @@ import { CustomerComponent } from './customer/customer.component';
 import { SupplierComponent } from './supplier/supplier.component';
 import { AssociateComponent } from './associate/associate.component';
 import { LoginModule } from './login/login.module';
+import { Twowaybinding2Component } from './twowaybinding2/twowaybinding2.component';
+import { DirectivesdemoComponent } from './directivesdemo/directivesdemo.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { LoginModule } from './login/login.module';
     Comp2Component,
     CustomerComponent,
     SupplierComponent,
-    AssociateComponent
+    AssociateComponent,
+    Twowaybinding2Component,
+    DirectivesdemoComponent
   ],
   imports: [
     BrowserModule,
