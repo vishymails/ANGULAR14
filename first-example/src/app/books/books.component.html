@@ -3,7 +3,18 @@
     Books present in my Book Store 
 </h3>
 
-<button [disabled] = "isDisabled"> Show Books </button>
+<!--<button (click)="handleClick()" (mouseover)="handleMouseOver()" [disabled] = "isDisabled"> Show Books </button>
+-->
+
+
+
+<button (click)="handleClick()" [disabled] = "isDisabled"> Show Books </button>
+
+<input type="text" [(ngModel)]= "data" />
+
+<br/>
+
+Data Entered in to the text field : {{ data }}
 <ul>
     <li>
         <img [src]="src"

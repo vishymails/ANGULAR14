@@ -21,6 +21,20 @@ export class BooksComponent implements OnInit {
 
 
   isDisabled : boolean = false;
+
+  handleClick() {
+    alert("Button clicked");
+  }
+
+  handleMouseOver() {
+    this.isDisabled = true;
+  }
+
+
+  data : string ="Dr.Rao";
+
+ 
+
   constructor() { }
 
   ngOnInit(): void {
