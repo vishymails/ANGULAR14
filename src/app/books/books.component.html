@@ -78,15 +78,7 @@ Data Entered in to the text field : {{ data }}
 <div>
     Slice Pipe 
 
-    {{ companies | slice:2:4 }} <br/>
-
-    Start Index : {{ companies | slice:2 }} <br/>
-
-    Negative index : {{ companies | slice:-2 }} <br/>
-
-
-    Negative start and end index : {{ companies | slice:-4:-2}}
-
+    {{ companies | slice:2:4 }}
 </div>
 
 <div>
@@ -94,34 +86,5 @@ Data Entered in to the text field : {{ data }}
 
     {{ 56.890000 | percent }}
 </div>
-<br/>
 
 
-<div>
-    Other Date Pipes 
-
-    {{todaysdate | date:'shortDate' }}<br/>
-    full date : {{ todaysdate | date:'fullDate' }}<br/>
-    formated Date : {{ todaysdate | date:'M/dd/yyyy' }}<br/>
-
-</div>
-
-
-<div>
-    Chained Pipes <br/>
-
-    Date with upper case : {{ todaysdate | date:'fullDate' | uppercase }}<br/>
-    Date with lower case : {{ todaysdate | date:'medium' | lowercase }}<br/>
-
-</div>
-
-
-<div style="text-align:center">
-json updated pipes 
-
-<p ngNonBindable>{{ datajon }}</p>
-<p> {{ datajson }}</p>
-
-<p ngNonBindable>{{ datajon | json }}</p>
-<p> {{ datajson | json }}</p>
-</div>
