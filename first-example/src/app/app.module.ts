@@ -14,6 +14,8 @@ import { AssociateComponent } from './associate/associate.component';
 import { LoginModule } from './login/login.module';
 import { Twowaybinding2Component } from './twowaybinding2/twowaybinding2.component';
 import { DirectivesdemoComponent } from './directivesdemo/directivesdemo.component';
+import { WordcountPipe } from './wordcount.pipe';
+import { FilesizePipe } from './filesize.pipe';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { DirectivesdemoComponent } from './directivesdemo/directivesdemo.compone
     SupplierComponent,
     AssociateComponent,
     Twowaybinding2Component,
-    DirectivesdemoComponent
+    DirectivesdemoComponent,
+    WordcountPipe,
+    FilesizePipe
   ],
   imports: [
     BrowserModule,

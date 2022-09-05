@@ -119,9 +119,20 @@ Data Entered in to the text field : {{ data }}
 <div style="text-align:center">
 json updated pipes 
 
-<p ngNonBindable>{{ datajon }}</p>
+<p ngNonBindable>{{ datajson }}</p>
 <p> {{ datajson }}</p>
 
 <p ngNonBindable>{{ datajon | json }}</p>
 <p> {{ datajson | json }}</p>
+</div>
+
+
+<div>
+    <p> Custom pipe with no arguments </p>
+
+    <h2> {{ customText | wordcount }}</h2>
+
+    <p> Custom Pipe with arguments </p>
+
+    {{ file.size | filesize:'megabyte' }}
 </div>

@@ -54,6 +54,10 @@ export class BooksComponent implements OnInit {
   isShowing : boolean = true;
 
 
+  customText : string = " Wikimedia Foundation, Inc. is a 501 nonprofit organization headquartered in San Francisco, California, registered as a charitable foundation under US law. It owns the Wikimedia projects – which are written and curated by thousands of Wikipedians and other unpaid volunteers";
+
+  file = { name : "bvr.svg", size : 21200190, type : 'image/svg'};
+
   constructor() { }
 
   ngOnInit(): void {
