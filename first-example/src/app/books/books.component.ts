@@ -41,7 +41,7 @@ export class BooksComponent implements OnInit {
 
   books : Book[] = [
     {
-      name : "sherlock holmes series complete ",
+      name : "sherlock holmes ",
       author : " Conan Doyle",
       src : 'https://images-na.ssl-images-amazon.com/images/I/51rvC3FJqkL._SX451_BO1,204,203,200_.jpg',
       price : 550
@@ -62,14 +62,14 @@ export class BooksComponent implements OnInit {
 
     },
     {
-      name : "India, Bharat and Pakistan : The Constitutional Journey of Sandwiched Civilisation",
+      name : "India, Bharat and Pakistan",
       author : "J Sai Deepak ",
       src : 'https://m.media-amazon.com/images/I/71ZKMWgafjL._AC_UY218_.jpg',
       price : 574
 
     },
     {
-      name : "MILLION MINDS ENGLISH UP TGT ENGLISH 20 PRACTICE SETS",
+      name : "MILLION MINDS ",
       author : "Yogesh Kumar",
       src : 'https://m.media-amazon.com/images/I/717madWznGL._AC_UY218_.jpg',
       price : 198
