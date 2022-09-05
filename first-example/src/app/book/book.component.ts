@@ -1,4 +1,8 @@
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChanges } from '@angular/core';
+import { AfterContentChecked, AfterContentInit,
+   AfterViewChecked, AfterViewInit, Component, DoCheck,
+    EventEmitter, Input, OnChanges, OnDestroy, OnInit, 
+    Output, SimpleChanges } from '@angular/core';
+    
 import { Book } from '../types/Book';
 
 
@@ -23,21 +27,21 @@ OnChanges {
     console.log("Constructor has been called ");
   }
   ngAfterViewChecked(): void {
-    throw new Error('Method not implemented.');
+   // throw new Error('Method not implemented.');
   }
   ngAfterViewInit(): void {
-    throw new Error('Method not implemented.');
+    //throw new Error('Method not implemented.');
   }
   ngAfterContentChecked(): void {
-    throw new Error('Method not implemented.');
+   // throw new Error('Method not implemented.');
   }
   ngAfterContentInit(): void {
-    throw new Error('Method not implemented.');
+   // throw new Error('Method not implemented.');
   }
   ngOnDestroy(): void {
    // throw new Error('Method not implemented.');
 
-   clearInterval(this.myInterval);
+   //clearInterval(this.myInterval);
    console.log("destroy method called ");
   }
 
@@ -47,10 +51,10 @@ OnChanges {
   ngOnInit(): void {
     console.log('Init method called ');
 
-    this.myInterval = setInterval(() => {
-      console.log("delayed message ")
-    }, 1000);
-  }
+  //   this.myInterval = setInterval(() => {
+  //     console.log("delayed message ")
+  //   }, 1000);
+   }
 
   addToCart() {
    // console.log(this.book);
