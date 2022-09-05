@@ -3,7 +3,7 @@ ul {
     flex-wrap: wrap;
 }
 
-.book {
+.book, app-book {
     list-style : none;
     text-overflow: ellipsis;
     width : 25%;

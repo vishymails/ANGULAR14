@@ -73,12 +73,20 @@ export class BooksComponent implements OnInit {
   ]
 
   
+  cart : Book[] = [];
   
 
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  addToCart(event : Book) {
+
+    console.log(event);
+
   }
 
 }
