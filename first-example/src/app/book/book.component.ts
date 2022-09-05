@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChanges } from '@angular/core';
 import { Book } from '../types/Book';
 
 
@@ -7,7 +7,13 @@ import { Book } from '../types/Book';
   templateUrl: './book.component.html',
   styleUrls: ['./book.component.css']
 })
-export class BookComponent implements OnInit, OnDestroy {
+export class BookComponent implements OnInit, OnDestroy,
+DoCheck,
+AfterContentInit,
+AfterContentChecked,
+AfterViewInit,
+AfterViewChecked,
+OnChanges {
 
  @Input() book : Book = {} as Book;
 
@@ -15,6 +21,18 @@ export class BookComponent implements OnInit, OnDestroy {
 
   constructor() { 
     console.log("Constructor has been called ");
+  }
+  ngAfterViewChecked(): void {
+    throw new Error('Method not implemented.');
+  }
+  ngAfterViewInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  ngAfterContentChecked(): void {
+    throw new Error('Method not implemented.');
+  }
+  ngAfterContentInit(): void {
+    throw new Error('Method not implemented.');
   }
   ngOnDestroy(): void {
    // throw new Error('Method not implemented.');
@@ -38,5 +56,17 @@ export class BookComponent implements OnInit, OnDestroy {
    // console.log(this.book);
     this.bookEmitter.emit(this.book);
   }
+
+
+  ngOnChanges(changes : SimpleChanges) {
+    console.log(" ngonchanges called ");
+    console.log(changes);
+  }
+
+  ngDoCheck(): void {
+    console.log("ng do check method called ");
+  }
+
+  
 
 }
