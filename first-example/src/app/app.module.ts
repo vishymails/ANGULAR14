@@ -16,6 +16,7 @@ import { Twowaybinding2Component } from './twowaybinding2/twowaybinding2.compone
 import { DirectivesdemoComponent } from './directivesdemo/directivesdemo.component';
 import { WordcountPipe } from './wordcount.pipe';
 import { FilesizePipe } from './filesize.pipe';
+import { BookComponent } from './book/book.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { FilesizePipe } from './filesize.pipe';
     Twowaybinding2Component,
     DirectivesdemoComponent,
     WordcountPipe,
-    FilesizePipe
+    FilesizePipe,
+    BookComponent
   ],
   imports: [
     BrowserModule,
