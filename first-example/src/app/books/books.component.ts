@@ -34,11 +34,13 @@ export class BooksComponent implements OnInit {
   file = { name : "bvr.svg", size : 21200190, type : 'image/svg'};
 
 
-  
-  constructor(private bookService : BooksService) { 
+  private bookService : BooksService;
 
-    //you can do at construction level 
-   // this.books = this.bookService.getBooks();
+
+  constructor() { 
+
+     // const name = new Name("Dr.Rao");
+      this.bookService = new BooksService();
   }
 
 
@@ -65,3 +67,5 @@ export class BooksComponent implements OnInit {
   }
 
 }
+
+
