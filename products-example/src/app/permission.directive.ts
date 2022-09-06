@@ -22,4 +22,4 @@ export class PermissionDirective implements OnInit {
     }
   }
 
-}
+

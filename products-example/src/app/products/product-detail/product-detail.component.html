@@ -1,1 +1,17 @@
-<p>product-detail works!</p>
+<div *ngIf="product">
+    <h2> Product Details </h2>
+    <h3> {{ product.name }}</h3>
+    <span>{{ product.price | currency:'INR' }}</span>
+    <div [ngSwitch]="product.name">
+        <p *ngSwitchCase = "'Webcam'">
+            Product is used for Video 
+        </p>
+        <p *ngSwitchCase = "'Microphone'">
+            Product is used for audio 
+        </p>
+        <p *ngSwitchDefault> Product is used for general </p>
+        
+    </div>
+
+    <button (click)="buy()">Buy Now</button>
+</div>

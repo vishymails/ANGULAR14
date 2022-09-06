@@ -16,6 +16,7 @@ import { ProductHostDirective } from './product-host.directive';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports : [ProductListComponent]
 })
 export class ProductsModule { }

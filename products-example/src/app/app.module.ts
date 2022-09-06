@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CopyrightDirective } from './copyright.directive';
 import { NumericDirective } from './numeric.directive';
 import { PermissionDirective } from './permission.directive';
+import { ProductsModule } from './products/products.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PermissionDirective } from './permission.directive';
   ],
   imports: [
     BrowserModule,
+    ProductsModule,
     AppRoutingModule
   ],
   providers: [],
