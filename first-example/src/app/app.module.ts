@@ -16,13 +16,13 @@ import { Twowaybinding2Component } from './twowaybinding2/twowaybinding2.compone
 import { DirectivesdemoComponent } from './directivesdemo/directivesdemo.component';
 import { WordcountPipe } from './wordcount.pipe';
 import { FilesizePipe } from './filesize.pipe';
-import { BookComponent } from './book/book.component';
+import { BookComponent } from './books/book/book.component';
+import { BooksModule } from './books/books.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BooksComponent,
     ServerComponent,
     ServersComponent,
     Comp2Component,
@@ -32,14 +32,14 @@ import { BookComponent } from './book/book.component';
     Twowaybinding2Component,
     DirectivesdemoComponent,
     WordcountPipe,
-    FilesizePipe,
-    BookComponent
+    FilesizePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    LoginModule
+    LoginModule,
+    BooksModule
   ],
   providers: [],
   bootstrap: [AppComponent]

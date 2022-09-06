@@ -3,7 +3,7 @@ import { AfterContentChecked, AfterContentInit,
     EventEmitter, Input, OnChanges, OnDestroy, OnInit, 
     Output, SimpleChanges } from '@angular/core';
     
-import { Book } from '../types/Book';
+import { Book } from '../../types/Book';
 
 
 @Component({
