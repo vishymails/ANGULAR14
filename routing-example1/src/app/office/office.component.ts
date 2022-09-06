@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-office',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfficeComponent implements OnInit {
 
-  constructor() { }
+  message : string = '';
+
+  constructor(private route : ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      this.message = params['message'] || '';
+    });
   }
 
+  // goToOffice(message : string ) {
+  //   this.route.navigate(['/office', { message : message }]);
+  // }
+  
 }
+

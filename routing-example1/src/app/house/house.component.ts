@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-house',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HouseComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
   }
 
+  goToOffice(message : string) {
+    this.router.navigate(['/office'], {queryParams : {message : message }});
+  }
 }
