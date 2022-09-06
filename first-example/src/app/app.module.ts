@@ -18,6 +18,7 @@ import { WordcountPipe } from './wordcount.pipe';
 import { FilesizePipe } from './filesize.pipe';
 import { BookComponent } from './books/book/book.component';
 import { BooksModule } from './books/books.module';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { BooksModule } from './books/books.module';
     Twowaybinding2Component,
     DirectivesdemoComponent,
     WordcountPipe,
-    FilesizePipe
+    FilesizePipe,
+    CartComponent
   ],
   imports: [
     BrowserModule,
