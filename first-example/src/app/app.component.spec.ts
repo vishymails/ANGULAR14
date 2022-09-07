@@ -23,13 +23,21 @@ describe('AppComponent', () => {
   it(`should have as title 'first-example'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('first-example');
+    expect(app.title).toContain('first-example');
   });
 
-  it('should render title', () => {
+  it(`Should render banner'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('first-example app is running!');
+    expect(compiled.querySelector('.toolbar span')?.textContent).toContain('WelcomeAll');
   });
+
+
+  // it('should render title', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   fixture.detectChanges();
+  //   const compiled = fixture.nativeElement as HTMLElement;
+  //   expect(compiled.querySelector('.content span')?.textContent).toContain('first-example app is running!');
+  // });
 });
