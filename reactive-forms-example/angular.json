@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "HttpClient-example": {
+    "reactive-forms-example": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/http-client-example",
+            "outputPath": "dist/reactive-forms-example",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "HttpClient-example:build:production"
+              "browserTarget": "reactive-forms-example:build:production"
             },
             "development": {
-              "browserTarget": "HttpClient-example:build:development"
+              "browserTarget": "reactive-forms-example:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "HttpClient-example:build"
+            "browserTarget": "reactive-forms-example:build"
           }
         },
         "test": {
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "5243f3f9-439a-4c63-99d5-e8ae753b9262"
+    "analytics": "57227eaf-ced7-42ed-bff5-de6d2742c8a4"
   }
 }
